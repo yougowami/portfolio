@@ -1,0 +1,186 @@
+/* Défilement fluide */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fond noir */
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #444;
+}
+header h1 {
+    margin: 0;
+    color: #f4b400; /* Couleur dorée */
+}
+
+/* Sections */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+section h2 {
+    color: #f4b400;
+    margin-bottom: 10px;
+    text-align: center;
+}
+section h3 {
+    color: #f4b400;
+}
+
+/* Listes */
+ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+ul li {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Projets */
+.projects {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.projects a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.projects a:hover {
+    transform: scale(1.05);
+}
+.projects img {
+    width: 480px;
+    height: 270px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.projectsICON {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.projectsICON a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.projectsICON a:hover {
+    transform: scale(1.05);
+}
+.projectsICON img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Animation au clic */
+.animated-link img {
+    transition: transform 0.7s ease;
+}
+
+.animated-link:active img {
+    transform: scale(1.1) rotate(10deg);
+}
+
+#presentation {
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.presentation-container {
+    display: flex;
+    align-items: center; /* Aligne verticalement l'image et le texte */
+    gap: 20px;
+    flex-wrap: nowrap; /* Empêche le texte de passer en dessous de l'image */
+}
+
+.presentation-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid #ffa500;
+    object-fit: cover;
+    flex-shrink: 0; /* Empêche l'image de rétrécir */
+}
+
+.presentation-text {
+    flex: 1; /* Le texte occupe l'espace restant */
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.presentation-text p {
+    margin-bottom: 15px;
+}
+
+.diplomes-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.diplomes-list li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #ccc;
+}
+
+.diplomes-list li strong {
+    color: #ffa500; /* Accent sur le titre des diplômes */
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #1a1a1a;
+    border-top: 2px solid #444;
+    margin-top: 20px;
+}
+footer p {
+    margin: 0;
+    color: #888;
+}
